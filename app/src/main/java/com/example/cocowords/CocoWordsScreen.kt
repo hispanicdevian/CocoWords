@@ -12,7 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
-import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -33,7 +33,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun CocoWordsScreen(viewModel: CocoWordsViewModel) {
-    val generatedPassword = viewModel.generatedPassword.value
+    var generatedPassword by remember { mutableStateOf("") }
     var isButtonEnabled by remember { mutableStateOf(true) }
     var isLoading by remember { mutableStateOf(false) }
 
@@ -73,16 +73,14 @@ fun CocoWordsScreen(viewModel: CocoWordsViewModel) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Use a Box to conditionally display the LinearProgressIndicator and Button
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp),
                 horizontalAlignment = CenterHorizontally
-            ){
-
+            ) {
                 if (isLoading) {
-                    LinearProgressIndicator(
+                    CircularProgressIndicator(
                         modifier = Modifier.fillMaxWidth(),
                         color = Purple40
                     )
@@ -97,15 +95,15 @@ fun CocoWordsScreen(viewModel: CocoWordsViewModel) {
                             isLoading = true // Show progress indicator
                             CoroutineScope(Dispatchers.Default).launch {
                                 viewModel.generateRandomPassword()
-                                delay(1500) // Wait for 2 seconds
+                                delay(2000) // Wait for 1.5 seconds
                                 isLoading = false // Hide progress indicator
                                 isButtonEnabled = true
+                                generatedPassword = viewModel.generatedPassword.value
                             }
                         }
                     },
                     enabled = isButtonEnabled
                 ) {
-
                     Text("Generate Password")
                 }
             }
