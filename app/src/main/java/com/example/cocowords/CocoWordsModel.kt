@@ -15,7 +15,7 @@ class CocoWordsModel {
     suspend fun getRandomWord(): String {
         return withContext(Dispatchers.IO) {
             val httpClient = HttpClient()
-            val response: HttpResponse = httpClient.get("https://api.wordnik.com/v4/words.json/randomWord?api_key=iqa3mhnt0yryz8gsk7j9heukupgcjg0m1p96x8ah2dn0r97mr")
+            val response: HttpResponse = httpClient.get("https://api.wordnik.com/v4/words.json/randomWord?api_key=API_KEY_GOES_HERE")
 
             if (response.status.isSuccess()) {
                 val responseBody = response.bodyAsText()
