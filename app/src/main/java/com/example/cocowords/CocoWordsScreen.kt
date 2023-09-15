@@ -1,9 +1,8 @@
+package com.example.cocowords
+
 import android.content.res.Configuration
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalConfiguration
-import com.example.cocowords.CocoWordsLandscape
-import com.example.cocowords.CocoWordsPortrait
-import com.example.cocowords.CocoWordsViewModel
 
 @Composable
 fun CocoWordsScreen(viewModel: CocoWordsViewModel) {
