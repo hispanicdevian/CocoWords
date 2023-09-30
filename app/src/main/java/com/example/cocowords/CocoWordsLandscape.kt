@@ -51,7 +51,7 @@ fun CocoWordsLandscape(viewModel: CocoWordsViewModel) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = CenterHorizontally
         ) {
-            Text("Password Generator", fontSize = 24.sp)
+            Text("Word Generator", fontSize = 24.sp)
 
             Spacer(modifier = Modifier.padding(16.dp))
 
@@ -93,7 +93,7 @@ fun CocoWordsLandscape(viewModel: CocoWordsViewModel) {
                 colors = ButtonDefaults.buttonColors(CocoCoolBrown)
 
             ) {
-                Text("Generate Password")
+                Text("Generate Word")
             }
         }
         Column(
