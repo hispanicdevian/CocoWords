@@ -1,7 +1,7 @@
 # CocoWords
 Random Word Generator App With API
 - MVVM
-- Compose
+- Jetpack Compose
 - API
 - Portrait & Landscape View
 - Logos dones by me
