@@ -12,3 +12,5 @@ Random Word Generator App With API
 
 # Home/Launch Icon:
 ![homeScreenDemo55](https://github.com/ianttta/CocoWords/assets/135581442/cadc33bf-5ff7-48f0-84eb-9ae423e0ef86)
+
+Images and design done by me
