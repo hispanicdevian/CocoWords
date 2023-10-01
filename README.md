@@ -3,6 +3,7 @@ Random Word Generator App With API
 - MVVM
 - Compose
 - API
+- Portrait & Landscape View
 - Logos dones by me
 
 # Features:
