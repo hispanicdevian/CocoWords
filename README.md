@@ -3,6 +3,7 @@ Random Word Generator App With API
 - MVVM
 - Compose
 - API
+- Images are vectors done by me
 
 # Features:
 ![WordScreenDemoFF](https://github.com/ianttta/CocoWords/assets/135581442/709f0c1f-f47e-48b1-9b2b-11fce3c3cfca)
@@ -12,5 +13,3 @@ Random Word Generator App With API
 
 # Home/Launch Icon:
 ![homeScreenDemo55](https://github.com/ianttta/CocoWords/assets/135581442/cadc33bf-5ff7-48f0-84eb-9ae423e0ef86)
-
-Images and design done by me
