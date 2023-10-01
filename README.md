@@ -3,7 +3,7 @@ Random Word Generator App With API
 - MVVM
 - Compose
 - API
-- Logos done by me
+- Logos dones by me
 
 # Features:
 ![WordScreenDemoFF](https://github.com/ianttta/CocoWords/assets/135581442/709f0c1f-f47e-48b1-9b2b-11fce3c3cfca)
